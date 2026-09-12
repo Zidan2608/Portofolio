@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Fahru Zidan - Mobile Developer</title>
+    <meta name="description"
+        content="Portfolio software Developer Indonesia. Spesialisasi dalam React, Node.js, dan cloud development. Tersedia untuk freelance dan full-time opportunity.">
+    <meta name="keywords"
+        content="software developer, full-stack developer, React, Node.js, Indonesia, web development, portfolio">
+    <meta name="author" content="Software Developer">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/">
+    <meta property="og:title" content="Portfolio — Software Developer">
+    <meta property="og:description"
+        content="Software Developer Indonesia. Spesialisasi dalam React, Node.js, dan cloud development.">
+    <meta property="og:image" content="https://yourportfolio.com/og-image.png">
+
+
+    <!-- Fonts with preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Cursor - hidden on touch devices -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+    <script>
+        // Hide cursor on touch devices
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            document.body.classList.add('no-cursor');
+        }
+    </script>
+
+    <!-- Ambient Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo">Fahru Zidan<span style="color:var(--accent)">.</span>dev</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">hire me →</a>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-inner">
+                <div class="hero-tag fade-up">Available for work</div>
+                <h1 class="hero-title fade-up fade-up-delay-1">
+                    <span class="title-line-1">I Build</span>
+                    <span class="title-line-2">Future</span>
+                </h1>
+                <p class="hero-desc fade-up fade-up-delay-2">
+                    Software & Mobile developer dengan passion membangun produk yang fungsional, skalabel, dan
+                    menyenangkan
+                    digunakan. Dari backend yang kokoh hingga frontend yang indah.
+                </p>
+                <div class="hero-actions fade-up fade-up-delay-3">
+                    <a href="#projects" class="btn-primary">Lihat Proyek</a>
+                    <a href="#contact" class="btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="stats-bar">
+            <div class="stat fade-up">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+            <div class="stat fade-up fade-up-delay-1">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat fade-up fade-up-delay-2">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Klien Puas</span>
+            </div>
+            <div class="stat fade-up fade-up-delay-3">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Kopi Diminum</span>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="inner">
+                <div class="about-grid">
+                    <div class="about-image-wrap fade-up">
+                        <div class="about-image-box">
+                            <img src="images/profile.jpg" alt="Fahru Zidan" class="about-profile-img">
+                        </div>
+                        <div class="about-accent-line"></div>
+                        <div class="about-tag-float">Based in Bogor</div>
+                    </div>
+                    <div class="about-text">
+                        <div class="section-header" style="margin-bottom:2rem">
+                            <div class="section-tag">Tentang Saya</div>
+                            <h2 class="section-title">Developer yang <span>Berpikir</span> Seperti Product
+                                Manager</h2>
+                        </div>
+                        <p class="fade-up">
+                            Halo! Saya seorang <strong>Software & Mobile Developer</strong> berbasis di Bogor, Indonesia
+                            dengan
+                            pengalaman 3+ tahun membangun aplikasi web dan mobile yang berdampak nyata bagi
+                            pengguna.
+                        </p>
+                        <p class="fade-up fade-up-delay-1">
+                            Saya percaya bahwa kode yang baik bukan hanya yang berjalan dengan benar, tapi juga yang
+                            <strong>mudah dibaca, dipelihara, dan diskalakan</strong>. Setiap baris kode adalah
+                            keputusan desain.
+                        </p>
+                        <p class="fade-up fade-up-delay-2">
+                            Ketika tidak sedang coding saya belajar tentang perkembangan AI, Belajar mendesain Web,
+                            dan mengeksplorasi teknologi baru yang bisa memecahkan masalah nyata.
+                        </p>
+                        <div class="tech-stack fade-up fade-up-delay-3">
+                            <div class="tech-stack-label">Tech Stack</div>
+                            <div class="tech-chips">
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">TypeScript</span>
+                                <span class="chip">Node.js</span>
+                                <span class="chip">Python</span>
+                                <span class="chip">Flutter</span>
+                                <span class="chip">Dart</span>
+                                <span class="chip">Git</span>
+                                <span class="chip">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="inner">
+                <div class="section-header fade-up">
+                    <div class="section-tag">Keahlian</div>
+                    <h2 class="section-title">Apa yang Bisa Saya <span>Lakukan</span></h2>
+                </div>
+                <div class="skills-grid">
+
+                    <!-- Languages -->
+                    <div class="skill-card fade-up">
+                        <div class="skill-icon">💬</div>
+                        <h3>Languages</h3>
+                        <p>Bahasa pemrograman yang saya kuasai untuk membangun berbagai jenis aplikasi dari mobile
+                            hingga web.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Dart</span>
+                            <span class="skill-tag-pill">Python</span>
+                            <span class="skill-tag-pill">PHP</span>
+                            <span class="skill-tag-pill">JavaScript</span>
+                            <span class="skill-tag-pill">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Development -->
+                    <div class="skill-card fade-up fade-up-delay-1">
+                        <div class="skill-icon">📱</div>
+                        <h3>Mobile Development</h3>
+                        <p>Pengembangan aplikasi mobile native dan cross-platform yang mulus, cepat, dan berperforma
+                            tinggi.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Flutter</span>
+                            <span class="skill-tag-pill">Android</span>
+                            <span class="skill-tag-pill">SQLite</span>
+                            <span class="skill-tag-pill">Hive</span>
+                            <span class="skill-tag-pill">REST API</span>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-card fade-up fade-up-delay-2">
+                        <div class="skill-icon">🤖</div>
+                        <h3>Machine Learning</h3>
+                        <p>Membangun model deep learning untuk klasifikasi gambar, regresi, dan deployment ke edge
+                            device.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">TensorFlow</span>
+                            <span class="skill-tag-pill">CNN</span>
+                            <span class="skill-tag-pill">MLP</span>
+                            <span class="skill-tag-pill">Image Classification</span>
+                            <span class="skill-tag-pill">Regression</span>
+                            <span class="skill-tag-pill">TensorFlow Lite</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-card fade-up">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Web Development</h3>
+                        <p>Membangun website dan aplikasi web yang responsif, fungsional, dan mudah digunakan.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">HTML</span>
+                            <span class="skill-tag-pill">CSS</span>
+                            <span class="skill-tag-pill">PHP</span>
+                            <span class="skill-tag-pill">MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card fade-up fade-up-delay-1">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>Tools</h3>
+                        <p>Perkakas pengembangan modern yang mendukung produktivitas, kolaborasi, dan kualitas kode.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Git &amp; GitHub</span>
+                            <span class="skill-tag-pill">Android Studio</span>
+                            <span class="skill-tag-pill">VS Code</span>
+                            <span class="skill-tag-pill">Laragon</span>
+                            <span class="skill-tag-pill">Antigravity</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="inner">
+                <div class="section-header fade-up">
+                    <div class="section-tag">Portofolio</div>
+                    <h2 class="section-title">Proyek <span>Terpilih</span></h2>
+                </div>
+                <div class="projects-grid">
+
+                    <!-- Featured Project -->
+                    <div class="project-card featured fade-up">
+                        <div>
+                            <div class="project-num">01 — Featured</div>
+                            <h3 class="project-title">Platform Inventory E-Commerce Full-Stack</h3>
+                            <p class="project-desc">Marketplace modern dengan fitur real-time inventory management,
+                                dashboard analytics untuk seller.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">Node.JS</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="project-card featured fade-up">
+                        <div>
+                            <div class="project-num">02 — Featured</div>
+                            <h3 class="project-title">Aplikasi Monitoring kolam ikan dan Prediksi pertumbuhan ikan</h3>
+                            <p class="project-desc">Aplikasi mobile untuk monitoring kualitas air pada kolam ikan dan
+                                prediksi pertumbuhan berbasis CNN</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Dart</span>
+                                <span class="project-tag">SQLite</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">TensorFlow Lite</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <div class="inner">
+                <div class="section-header fade-up">
+                    <div class="section-tag">Perjalanan Karir</div>
+                    <h2 class="section-title">Pengalaman</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">2022 — Sekarang</div>
+                        <div class="timeline-role">Junior Developer</div>
+                        <ul class="timeline-desc">
+                            <li>Membangun aplikasi inventory barang berbasis website di Luminous Creation</li>
+                            <li>Membangun aplikasi inventory untuk Mobile</li>
+                            <li>Membangun aplikasi mobile untuk monitoring kolam dan pertumbuhan ikan</li>
+                            <li>Membangun aplikasi rental mobil</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="inner">
+                <div class="contact-inner">
+                    <div class="contact-left fade-up">
+                        <h2>Mari Kita <span style="color:var(--accent)">Bekerja</span> Sama</h2>
+                        <p>Punya proyek yang ingin diwujudkan? Sedang mencari developer untuk tim Anda? Atau sekadar
+                            ingin berkenalan? Saya selalu terbuka untuk diskusi.</p>
+                        <div class="contact-links">
+                            <a href="mailto:hello@example.com" class="contact-item">
+                                <div class="contact-item-icon">✉️</div>
+                                <span>Fahruzidanalmustafa312@gmail.com</span>
+                            </a>
+                            <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer"
+                                class="contact-item">
+                                <div class="contact-item-icon">💼</div>
+                                <span>linkedin.com/in/Fahruzidan</span>
+                            </a>
+                            <a href="https://github.com/yourname" target="_blank" rel="noopener noreferrer"
+                                class="contact-item">
+                                <div class="contact-item-icon">🐱</div>
+                                <span>github.com/Zidan2608</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form fade-up fade-up-delay-1" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Nama lengkap Anda"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="email@anda.com"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea id="message" name="message" class="form-textarea"
+                                placeholder="Ceritakan proyek atau kebutuhan Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-submit"
+                            style="border:none;cursor:pointer;width:100%;font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:600">
+                            Kirim Pesan →
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-copy">© <span id="year"></span> — Cogito Ergo Sum - I Think Therefore I Am</div>
+        <div class="footer-social">
+            <a href="https://github.com/Zidan2608" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/Fahruzidan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://instagram.com/fhr_zidan2608" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
